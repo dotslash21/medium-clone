@@ -16,4 +16,21 @@ export interface Post {
     current: string
   }
   body: [object]
+  comments: Comment[]
+}
+
+export interface Comment {
+  _id: string
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  _type: string
+  name: string
+  email: string
+  comment: string
+  post: {
+    _ref: string
+    _type: string
+  }
+  approved: boolean
 }
