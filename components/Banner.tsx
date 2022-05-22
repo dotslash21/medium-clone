@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Banner() {
   return (
     <div className="flex items-center justify-between border-y border-black bg-yellow-400 py-10 lg:py-0">
