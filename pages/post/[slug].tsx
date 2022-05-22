@@ -241,6 +241,13 @@ const Post = ({ post }: Props) => {
             </p>
           </div>
         ))}
+
+        {post.comments.length === 0 && (
+          <div className="">
+            <h4 className="text-gray-700 text-xl mb-2">No comments yet</h4>
+            <p className="text-sm text-gray-600">Be the first to share what you think!</p>
+          </div>
+        )}
       </div>
     </main>
   )
